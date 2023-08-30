@@ -1,0 +1,1 @@
+The project was done for a porfolio. The project was rolled by me personally. 

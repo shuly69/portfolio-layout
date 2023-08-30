@@ -1,0 +1,73 @@
+@import 'header';
+@import 'service-space';
+@import 'about-space';
+@import 'partners';
+@import 'portfolio-space';
+@import 'testimonial-space';
+@import 'contact-space';
+@import 'footer';
+
+.background-home {
+  min-height: 840px;
+
+  &__img {
+    height: 840px;
+  }
+}
+
+.part-header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 752px;
+}
+
+.info-person {
+  margin: auto 0;
+
+  &__title {
+    position: relative;
+    color: #ffffff;
+    font-size: 130px;
+    font-family: Anton, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &__text-top {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__text-bottom {
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+.info-person__title--line {
+  position: absolute;
+  top: 22px;
+  right: -5px;
+  height: 140px;
+  border: 1px solid #ffffff;
+}
+
+
+
+@media screen and (width <= 600px) {
+  .info-person__title--line {
+    position: unset;
+  }
+
+ 
+
+  .info-person__title {
+    font-size: 65px;
+  }
+
+ 
+}
+

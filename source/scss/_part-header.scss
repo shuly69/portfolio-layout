@@ -1,0 +1,42 @@
+.part-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 460px;
+  
+    &__title {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 130px;
+      font-family: Anton, sans-serif;
+      text-transform: uppercase;
+    }
+  }
+  
+  .breadcrumbs {
+    color: #a9a9aa;
+    text-transform: capitalize;
+      
+    &__page-prev {
+      font-weight: 700;
+      color: #a9a9aa;
+      text-decoration: none;
+    }
+  
+    &__page-current {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (width <= 450px) {
+    .part-header {
+      min-height: 359px;
+    } 
+  
+    .part-header__title {
+      font-size: 64px;
+    }
+
+  }

@@ -1,0 +1,137 @@
+.testimonial-space {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 663px;
+  
+    &__right {
+      max-width: 655px;
+      width: 100%;
+    }
+  }
+  
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+  
+    &__text {
+      font-size: 24px;
+      font-family: Anton, sans-serif;
+    }
+  
+    &__span {
+      font-family: Anton, sans-serif;
+    }
+  }
+  
+  .testimonial-header__title--hidden {
+    display: none;
+  }
+  
+  .testimonial-wrapper {
+    width: 364px;
+    overflow: hidden;
+  }
+  
+  .testimonial-slider {
+    position: relative;
+    display: flex;
+  
+    &__list {
+      min-width: 364px;
+      max-height: 422px;
+      list-style: none;
+    }
+  }
+  
+  .testimonial-dots {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .color-grey {
+    color: #c4c4c4;
+  }
+  
+  .quote {
+    width: 21px;
+    height: 14px;
+  }
+  
+  .testimonial-main {
+    &__text {
+      max-width: 429px;
+      width: 100%;
+      margin: 21px 0 32px;
+      color: #111214;
+      font-size: 14px;
+      line-height: 32px;
+    }
+  
+    &__name {
+      color: #a9a9aa;
+      font-size: 14px;
+    }
+  
+    &__span {
+      display: block;
+      font-size: 16px;
+    }
+  }
+  
+  .testimonial-main__slider-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+  }
+
+.testimonial-container {
+  max-width: 429px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-text {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  &__item {
+    min-width: 429px;
+    list-style: none;
+  }
+}
+
+  @media screen and (width <= 1000px) {
+    .testimonial-space {
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    
+  }
+
+  @media screen and (width <= 450px)  {
+    .testimonial-space {
+        min-height: 965px;
+    
+        &__right {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+        }
+      }
+
+      .testimonial-header__title {
+        display: none;
+    
+        &--hidden {
+          display: flex;
+        }
+      } 
+    
+  }

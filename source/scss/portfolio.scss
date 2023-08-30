@@ -1,0 +1,16 @@
+@import 'header';
+@import 'part-header';
+@import 'portfolio-space';
+@import 'partners';
+@import 'question-space';
+@import 'footer';
+
+.portfolio-question {
+    margin-top: 120px;
+}
+
+@media screen and (width <= 450px) {
+    .portfolio-question {
+        margin-top: 0;
+    }
+}

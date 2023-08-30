@@ -1,0 +1,149 @@
+header {
+    position: relative;
+}
+  
+.background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 547px;
+  
+    &__img {
+        width: 100%;
+      height: 100%;
+        object-fit: cover;
+    }
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+  
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 23px;
+}
+  
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 375px;
+    width: 100%;
+  
+    &__item {
+        list-style: none;
+    }
+      
+    &__link {
+        color: #a9a9aa;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+  
+        &--active,
+        &:hover {
+            color: #fe390c;
+        }
+    }
+}
+  
+.contact__link {
+    padding: 11px 17px;
+    color: #fe390c;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #fe390c;
+}
+  
+.hidden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+  
+.burger-menu {
+    position: relative;
+    display: none;
+    height: 20px;
+  
+    &__wrapper {
+        position: absolute;
+        top: 25px;
+        display: none;
+    }
+  
+    &__svg {
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+
+.background__title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #FFFFFF05;
+    font-size: 320px;
+    font-family: Anton, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .background-about {
+    height: 547px;
+  
+    &__img {
+      height: 100%;
+    }
+  }
+
+
+  @media screen and (width <= 1000px) {
+  .background__title {
+    bottom: 20%;
+    font-size: 200px;
+  }
+}
+
+
+
+@media screen and (width <= 600px) {
+  .menu {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .background__title {
+    bottom: 32%;
+    font-size: 80px;
+  }
+}
+
+@media screen and (width <= 450px) {
+    .background-about {
+      max-height: 447px;
+  
+      &__img {
+        max-height: 447px;
+      }
+    }
+
+    .menu-slider__wrapper {
+      flex-wrap: wrap;
+    }
+}

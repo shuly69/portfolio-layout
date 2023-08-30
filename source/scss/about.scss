@@ -1,0 +1,311 @@
+@import 'header';
+@import 'part-header';
+@import 'partners';
+@import 'footer';
+
+
+.about-description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  &__img {
+    max-width: 485px;
+    width: 100%;
+  }
+
+  &__wrapper {
+    max-width: 582px;
+    width: 100%;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 20px;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+
+  &__hr {
+    height: 1px;
+    color: #F2F3F4;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 32px;
+    font-family: Anton, sans-serif;
+  }
+
+  &__text {
+    color: #A9A9AA;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  &__numbers {
+    display: flex;
+    gap: 64px;
+  }
+}
+
+.section-skills {
+  display: flex;
+  align-items: center;
+  min-height: 466px;
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__first-block {
+    max-width: 486px;
+  }
+
+  &__text {
+    padding-top: 12px;
+    padding-bottom: 32px;
+    color: #A9A9AA;
+    font-size: 14px;
+    line-height: 32px;
+  }
+
+  &__secondary-block {
+    max-width: 578px;
+    width: 100%;
+    padding-top: 25px;
+  }
+
+}
+
+.skills-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    list-style: none;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    color: #111214;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__strip {
+    position: relative;
+    height: 6px;
+    background-color: #DDDEE0;
+    border-radius: 24px;
+
+  &--access {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 6px;
+    background-color: #FE390C;
+    border-radius: 24px;
+  }
+  }
+}
+
+.section-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  min-height: 754px;
+
+  &__title {
+    text-align: center;
+  }
+}
+
+.experience {
+  display: flex;
+  gap: 77px;
+}
+
+.experience-item {
+  max-width: 214px;
+  width: 100%;
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  &__span {
+    font-size: 40px;
+    font-family: Anton, sans-serif;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    color: #111214;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__text {
+    color: #A9A9AA;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &--two {
+    padding-top: 40px;
+  }
+
+  &--three {
+    padding-top: 80px;
+  }
+
+  &--four {
+    padding-top: 120px;
+  }
+}
+
+.experience-item__title--span {
+  font-size: 14px;
+}
+
+
+
+@media screen and (width <= 1000px) {
+  .about-description {
+    gap: 26px;
+    justify-content: center;
+  }
+
+  .description {
+    padding: 0;
+  }
+
+  .section-skills {
+    min-height: 666px;
+
+    &__group {
+      justify-content: center;
+    }
+
+    &__first-block {
+      max-width: 578px;
+    }
+  }
+
+  .section-experience {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      padding: 0;
+    }
+  }
+
+  .experience {
+    justify-content: center;
+  }
+
+  .experience-item {
+    &--two {
+      padding-top: 0;
+    }
+
+    &--three {
+      padding-top: 0;
+    }
+
+    &--four {
+      padding-top: 0;
+    }
+  }
+
+}
+
+
+
+@media screen and (width <= 450px) {
+  .description__subtitle {
+    font-size: 24px;
+  }
+
+  .cv-space {
+    max-width: 340px;
+        
+    &__align {
+      align-items: center;
+      justify-content: center;
+      min-height: 461px;
+    }
+
+    &__title {
+      max-width: 180px;
+      font-size: 32px;
+    }
+
+    &__button {
+      margin-top: 40px;
+      margin-bottom: 19px;
+    }
+  }
+
+  .section-skills {
+    padding-bottom: 130px;
+    background-color: #ffffff;
+  }
+
+  .experience {
+    justify-content: flex-start;
+  }
+
+  .section-experience {
+    padding-bottom: 80px;
+  }
+
+ 
+
+  .section-title__item--span {
+    font-size: 64px;
+  }
+
+  .section-title__item {
+    font-size: 32px;
+  }
+
+}
